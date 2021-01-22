@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String arg[])	
+	{
+		
+	
+		double kelvin, pounds,miles,
+		celsius,kilograms,kilometers ;
+		
+		Scanner value= new Scanner(System.in); 
+		
+		System.out.println("Please Choose a number between 1 and 3 to Perform different conversion");
+		
+		int conversions=value.nextInt();
+		
+		if (conversions ==1) {
+			
+			System.out.println("Provide Kelvin to get its equivalent value in celsius: ");
+			
+			kelvin =value.nextDouble();
+			
+			celsius = kelvin - 273.15;
+			
+			System.out.println("Celsius Temperature in Celsius = "+ celsius);
+		}
+		
+		else if (conversions ==2){
+		    
+		   System.out.println("Provide pounds get its equivalent value in kilograms");
+			pounds =value.nextDouble();
+			
+			kilograms = pounds/2.2046;
+			
+			System.out.println("Pounds in kilograms = "+ kilograms);
+		   
+		}
+	
+	
+		else if (conversions ==3){
+		    
+			System.out.println("Provide miles get its equivalent value in kilometers");
+			miles =value.nextDouble();
+			
+			kilometers = miles * 1.609344;
+			
+			System.out.println("Miles in Kilometers = "+ kilometers);
+		   
+		}	
+	
+}
+
+}
